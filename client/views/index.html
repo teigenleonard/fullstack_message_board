@@ -12,6 +12,27 @@
 
   </head>
   <body>
-
+    <div class="container">
+      <div class="row">
+        <h1>FINAL CODE CHALLENGE</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12" ng-controller="InputController">
+          <label for="">NAME:</label>
+          <input type="text" placeholder="Name" ng-model="info.name">
+          <label for="">MESSAGE:</label>
+          <input type="text" placeholder="Message" ng-model="info.message">
+          <button type="button" name="button" ng-click="postData(info)">SUBMIT</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" ng-controller="DisplayController">
+          <div ng-repeat='info in messages' class="col-md-12">
+            {{ info.data.name }}
+            {{ info.data.message }}
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
