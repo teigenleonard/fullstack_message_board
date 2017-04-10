@@ -1,10 +1,10 @@
-#Instructions
+# Instructions
 Welcome to your last Code Challenge! In this challenge, you are going to build a MEAN stack application. The application you are going to build is a simple message board. You may use the base project supplied by your instructors as a platform to start from.
 
 Just relax and show us what you know!
 Thanks and good luck!
 
-##Message Board Application
+## Message Board Application
 The message board application you are going to build has the following requirements:
 
 * MUST use Angular and MongoDB (however the MongoDB code has been written for you),
