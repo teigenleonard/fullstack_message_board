@@ -26,14 +26,15 @@ myApp.factory('DataService', ['$http', function($http){
 
     function getData(){
       $http.get('/messages').then(function(response){
-        console.log('getData response:' response);
+        console.log('getData response:' + response.data);
       });
     }
 
     function postData(message){
       $http.post('/messages', message).then(function(response){
-        // console.log(response);
+        console.log(response);
       });
+      getData();
     }
 
     return {
