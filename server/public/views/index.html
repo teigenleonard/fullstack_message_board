@@ -25,12 +25,11 @@
           <button type="button" name="button" ng-click="postData(info)">SUBMIT</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12" ng-controller="DisplayController">
-          <div ng-repeat='info in messages' class="col-md-12">
-            {{ info.data.name }}
-            {{ info.data.message }}
-          </div>
+      <div class="row" ng-controller="DisplayController">
+        <div class="col-md-12" ng-repeat="info in messageObject.messages">
+            <p>Name: {{ info.name}}</p>
+            <p>Message: {{ info.message }}</p>
+
         </div>
       </div>
     </div>
